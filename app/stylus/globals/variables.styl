@@ -1,0 +1,73 @@
+// Variables
+
+// Font Families
+$font-family-georgia = Georgia, serif
+$font-family-opensans = 'Open Sans', Helvetica, Arial, sans-serif
+
+
+// Font Weights
+$font-weight-normal = 400
+$font-weight-bold = 700
+
+
+// Colors
+
+$teal = #1695a3
+$teal-drk = darken($teal,30%)
+$grey-drk = #333
+$grey-med = #444
+$grey-light = #f7f7f7
+
+white(alpha)
+  rgba(255,255,255,alpha)
+
+black(alpha)
+  rgba(0,0,0,alpha)
+
+
+// Borders
+
+$grey-border = 1px solid #ddd
+
+
+// Shadows
+
+$material-shadow = 0 0 3px black(.1), 0 3px 3px black(.2)
+
+
+// Widths
+
+$container-width = 1200px
+$small-width = 600px
+$medium-width = 900px
+
+// Transforms & transitions
+
+transition(args)
+  -webkit-transition: args
+  -moz-transition: args
+  transition: args
+
+// Centering content absolutely
+
+centerVert =
+  position: absolute
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -moz-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+centerBoth =
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%,-50%)
+  -moz-transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%)
+
+centerHoriz =
+  position: absolute
+  left: 50%
+  -webkit-transform: translateX(-50%)
+  -moz-transform: translateX(-50%)
+  transform: translateX(-50%)

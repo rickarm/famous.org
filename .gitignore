@@ -1,0 +1,7 @@
+.DS_Store
+.git
+node_modules
+public/index.html
+public/css/main.css
+public/coc.html
+public/404.html

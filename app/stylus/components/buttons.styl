@@ -1,0 +1,43 @@
+//- Buttons
+
+button
+  font-family: $font-family-opensans
+  font-size: 100%
+  cursor: pointer
+
+.btn
+  margin: 15px 0
+  padding: 15px 20px 12px
+  display: inline-block
+  border-radius: 3px
+  font-weight: $font-weight-bold
+  text-transform: uppercase
+  color: white
+
+  &.btn-light
+    border: 2px solid white
+
+    &:hover
+      background: white
+
+  &.btn-light-grey
+    &:hover
+      color: $grey-drk
+
+  &.btn-light-teal
+    &:hover
+      color: $teal
+
+  &.btn-primary
+    background-color: $teal
+    background-image: linear-gradient(to bottom, lighten($teal,10%), $teal)
+    border: 1px solid darken($teal,10%)
+    box-shadow: inset 0 1px 0 white(.5),
+                $material-shadow
+
+    &:hover
+      background: darken($teal,15%)
+
+  &.btn-small
+    margin: 10px 0
+    padding: 8px 15px 10px

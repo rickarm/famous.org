@@ -1,0 +1,101 @@
+// Main nav
+
+.nav-main
+  width: 100%
+  padding: 15px 30px
+  position: fixed
+  top: 0
+  z-index: 10
+  background: darken($grey-drk,40%)
+  text-align: right
+  font-weight: $font-weight-bold
+
+  .nav-logo
+    display: inline-block
+    float: left
+    margin-right: 16px
+    width: 36px
+    height: 36px
+  
+  a
+    margin-left: 15px
+    display: inline-block
+    color: white
+
+    &.home
+      margin-left: 0
+      float: left
+
+  .reveal-nav-btn
+    width: 36px
+    height: 30px
+    display: none
+    {centerVert}
+    right: 30px
+    border: 2px solid white
+    border-radius: 3px
+    color: white
+    font-size: 14px
+    text-transform: uppercase
+    cursor: pointer
+
+    // Hamburger mixin
+    hamburger(color)
+      background: color
+      box-shadow: 0 -6px 0 color,
+                  0  6px 0 color
+
+    // Hamburger
+    &:before
+      width: 20px
+      height: 2px
+      display: block
+      {centerBoth}
+      content: ''
+      hamburger(white)
+
+    &:hover
+      background: white
+
+      &:before
+        hamburger($grey-drk)
+
+  .reveal-nav-input
+    position: absolute
+    display: none
+    visibility: hidden
+  
+  .nav-main-list
+    margin-top: 8px
+  
+  .home
+    margin-top: 8px
+
+  @media screen and (max-width: $medium-width)
+
+    .nav-main-list
+      width: 100%
+      display: none
+      background: black
+      position: absolute
+      top: 100%
+      left: 0
+
+      a
+        margin-left: 0
+        padding: 8px 30px
+        display: block
+        text-align: left
+
+        &:not(:last-child)
+          border-bottom: 1px solid #222
+
+        &:hover
+          background: black
+
+    .reveal-nav-btn
+    .reveal-nav-input
+      display: inline-block
+
+    .reveal-nav-input:checked + .nav-main-list
+      display: block
