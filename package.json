@@ -12,7 +12,7 @@
     "build-jade": "jade ./app/pages/*.jade -o ./public/",
     "build-stylus": "stylus ./app/stylus/main.styl -o ./public/css/main.css",
     "prepublish": "npm run build",
-    "deploy": "npm run build && surge ./public"
+    "deploy": "npm run build && surge ./public late-night-hacking.surge.sh"
   },
   "repository": {
     "type": "git",
