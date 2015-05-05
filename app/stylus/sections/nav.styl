@@ -7,13 +7,18 @@
   top: 0
   z-index: 10
   background: darken($grey-drk,40%)
-  text-align: right
   font-weight: $font-weight-bold
+
+  .list-left
+    float: left
+
+  .list-right
+    text-align: right
 
   .nav-logo
     display: inline-block
     float: left
-    margin-right: 16px
+    margin-right: 1em
     width: 36px
     height: 36px
   
@@ -71,7 +76,7 @@
   .home
     margin-top: 8px
 
-  @media screen and (max-width: $medium-width)
+  @media screen and (max-width: $small-width)
 
     .nav-main-list
       width: 100%
