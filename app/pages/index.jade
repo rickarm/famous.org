@@ -8,5 +8,11 @@ block content
   include ../partials/marketing-row.jade
 
   // Main Content
-  section
-    include:markdown ../content/index.md
+  section.content
+    .examples
+        include:markdown ../content/index.md
+    .copy
+        include:markdown ../content/index-copy.md
+    .cta-group
+        button.cta Get Started
+        button.cta Download Famous 1.0.1.2
