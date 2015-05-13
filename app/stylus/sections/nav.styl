@@ -111,58 +111,55 @@
 
     .nav-main-list
       width: 100%
-      display: none
+      visibility:hidden
+      opacity:0
       background: black
       position: absolute
       top: 100%
       left: 0
       margin-top: 0px
+      transition(all ease-in-out 300ms)
+
+      .list-left
+        float:none
+        background:black
+        top:0
+        transform(none)
+
+        a
+          margin: 0 0 0 10px
+          padding-left:20px
+          border-bottom: 1px solid #222
+
+      .list-right
+        float:none
+        background:black
+        top:0
+        transform(none)
+
+        a
+          margin: 0 0 0 10px
+          padding-left:20px
+
+          &:not(:last-child)
+            border-bottom: 1px solid #222
+
+          &:hover
+            background: #333
 
       a
-        margin-left: 0
+        margin:0
         padding: 8px 30px
         display: block
         text-align: left
 
-        &:not(:last-child)
-          border-bottom: 1px solid #222
-
         &:hover
-          background: black
+          background: #333
 
     .reveal-nav-btn
     .reveal-nav-input
       display: inline-block
 
     .reveal-nav-input:checked + .nav-main-list
-      display: block
-
-  @media screen and (max-width: $small-width)
-
-    .nav-main-list
-      width: 100%
-      display: none
-      background: black
-      position: absolute
-      top: 100%
-      left: 0
-      margin-top: 0px
-
-      a
-        margin-left: 0
-        padding: 8px 30px
-        display: block
-        text-align: left
-
-        &:not(:last-child)
-          border-bottom: 1px solid #222
-
-        &:hover
-          background: black
-
-    .reveal-nav-btn
-    .reveal-nav-input
-      display: inline-block
-
-    .reveal-nav-input:checked + .nav-main-list
-      display: block
+      visibility:visible
+      opacity:1
