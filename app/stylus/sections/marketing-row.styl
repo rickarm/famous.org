@@ -1,11 +1,39 @@
 // Marketing section
 
 .marketing-row
-  padding: 0
-  text-align: left
+  padding: 80px 70px
+  text-align: center
+  color:$copy-dark
+  background:$background-light
 
   .column
     padding: 30px
+
+    .icon
+      width:100px
+      height:116px
+      display:inline-block
+      text-align:center
+      margin-bottom:30px
+
+    .fps
+      background: url(../images/fpo-marketing-icon-sprites.png) 0 0 no-repeat
+
+    .graph
+      background: url(../images/fpo-marketing-icon-sprites.png) -100px 0 no-repeat
+
+    .webgl
+      background: url(../images/fpo-marketing-icon-sprites.png) -200px 0 no-repeat
+
+  h2
+    font-family:$font-family-lato-bold
+    font-size:28px
+    font-weight:100
+
+  p
+    font-family:$font-family-lato-light
+    font-size:14px
+    font-weight:100
 
   @media screen and (min-width: $small-width + 1px)
 
