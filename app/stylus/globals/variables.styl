@@ -1,6 +1,9 @@
 // Variables
 
 // Font Families
+$font-family-lato-hairline = 'LatoHairline', 'Open Sans', Helvetica, Arial, sans-serif
+$font-family-lato-light = 'LatoLight', 'Open Sans', Helvetica, Arial, sans-serif
+$font-family-lato-black = 'LatoBlack', 'Open Sans', Helvetica, Arial, sans-serif
 $font-family-georgia = Georgia, serif
 $font-family-opensans = 'Open Sans', Helvetica, Arial, sans-serif
 
@@ -24,7 +27,6 @@ white(alpha)
 black(alpha)
   rgba(0,0,0,alpha)
 
-
 // Borders
 
 $grey-border = 1px solid #ddd
@@ -47,6 +49,13 @@ transition(args)
   -webkit-transition: args
   -moz-transition: args
   transition: args
+
+centerVertical()
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -moz-transform: translateY(-50%)
+  transform: translateY(-50%)
 
 // Centering content absolutely
 

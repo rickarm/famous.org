@@ -1,31 +1,61 @@
 // Main nav
 
 .nav-main
+
+  $logo-size = 50px
+
   width: 100%
-  padding: 15px 30px
-  position: fixed
+  padding: 25px
+  position: absolute
   top: 0
   z-index: 10
-  background: darken($grey-drk,40%)
   font-weight: $font-weight-bold
-
-  .list-left
-    float: left
-
-  .list-right
-    text-align: right
 
   .nav-logo
     display: inline-block
     float: left
-    margin-right: 1em
-    width: 36px
-    height: 36px
-  
-  a
-    margin-left: 15px
-    display: inline-block
-    color: white
+    margin-right:30px
+    width: $logo-size
+    height: $logo-size
+
+  .nav-main-list
+    a
+      font-family:$font-family-lato-light
+      font-size:12px
+      font-weight:100
+      margin:0 30px
+      display: inline-block
+      color: white
+
+    .list-left
+      float: left
+      text-transform: uppercase;
+      centerVertical()
+
+      a.download
+        margin 0 0 0 10px
+        padding-left:20px
+        background: url(../images/fpo-icon-sprites.png) 0 0 no-repeat
+
+    .list-right
+      float: right
+      text-align: right
+      centerVertical()
+
+      a
+        //margin right instead of left since it's floated right
+        margin: 0 0 0 30px
+        padding-left:20px
+
+      //TODO: replace this with icon sprite
+      .twitter
+        background: url(../images/fpo-icon-sprites.png) 0 -18px no-repeat
+
+      .github
+        background: url(../images/fpo-icon-sprites.png) 0 -33px no-repeat
+
+      .unknown
+        background: url(../images/fpo-icon-sprites.png) 0 -48px no-repeat
 
     &.home
       margin-left: 0
@@ -71,7 +101,8 @@
     visibility: hidden
   
   .nav-main-list
-    margin-top: 8px
+    //same height as logo for vertical centering
+    height: $logo-size
   
   .home
     margin-top: 8px
