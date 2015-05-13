@@ -35,8 +35,23 @@
     font-size:14px
     font-weight:100
 
-  @media screen and (min-width: $small-width + 1px)
+
+  @media screen and (min-width: $medium-width + 1px)
 
     .column
       width: 33.33%
       padding-bottom: 50px
+
+  @media screen and (max-width: $medium-width)
+
+    .column
+      width:70%
+      float:none
+      margin:0 auto
+
+  @media screen and (max-width: $small-width)
+
+    .column
+      width:100%
+      float:none
+      margin:0 auto

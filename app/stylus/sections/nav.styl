@@ -107,6 +107,36 @@
   .home
     margin-top: 8px
 
+  @media screen and (max-width: $medium-width)
+
+    .nav-main-list
+      width: 100%
+      display: none
+      background: black
+      position: absolute
+      top: 100%
+      left: 0
+      margin-top: 0px
+
+      a
+        margin-left: 0
+        padding: 8px 30px
+        display: block
+        text-align: left
+
+        &:not(:last-child)
+          border-bottom: 1px solid #222
+
+        &:hover
+          background: black
+
+    .reveal-nav-btn
+    .reveal-nav-input
+      display: inline-block
+
+    .reveal-nav-input:checked + .nav-main-list
+      display: block
+
   @media screen and (max-width: $small-width)
 
     .nav-main-list
