@@ -18,55 +18,61 @@
     width: $logo-size
     height: $logo-size
 
+  h1
+    font-family:$font-family-lato-light
+    font-size:36px
+    font-weight:100
+    margin:80px 0 0 0
+    padding:0
+    text-align:left
+    color:$copy-light
+
   .nav-main-list
     a
-      font-family:$font-family-lato-light
+      font-family:$font-family-lato-regular
       font-size:12px
-      font-weight:100
+      font-weight:normal
       margin:0 30px
       display: inline-block
       color: white
+
+    a.download
+      font-family:$font-family-lato-regular
+      font-weight: normal
+      margin: 0
+      padding:12px 20px 12px 45px
+      text-transform: uppercase;
+      border-radius: 8px
+      line-height:12px
+      border: 1px solid white
+      background: url("../images/download.svg") no-repeat scroll 15px -75px transparent
+
+      &:hover
+        opacity:1
+        color:#00b1a6
+        background: url("../images/download.svg") no-repeat scroll 15px 10px white
 
     .list-left
       float: left
       text-transform: uppercase;
       centerVertical()
 
-      a.download
-        margin 0 0 0 10px
-        padding-left:20px
-        background: url(../images/fpo-icon-sprites.png) 0 0 no-repeat
-
     .list-right
       float: right
       text-align: right
       centerVertical()
-
-      a
-        //margin right instead of left since it's floated right
-        margin: 0 0 0 30px
-        padding-left:20px
-
-      //TODO: replace this with icon sprite
-      .twitter
-        background: url(../images/fpo-icon-sprites.png) 0 -18px no-repeat
-
-      .github
-        background: url(../images/fpo-icon-sprites.png) 0 -33px no-repeat
-
-      .unknown
-        background: url(../images/fpo-icon-sprites.png) 0 -48px no-repeat
 
     &.home
       margin-left: 0
       float: left
 
   .reveal-nav-btn
+    position:absolute
     width: 36px
     height: 30px
     display: none
-    {centerVert}
-    right: 30px
+    right: 0
+    margin:10px 30px 0 0
     border: 2px solid white
     border-radius: 3px
     color: white
@@ -77,15 +83,15 @@
     // Hamburger mixin
     hamburger(color)
       background: color
-      box-shadow: 0 -6px 0 color,
-                  0  6px 0 color
+      box-shadow: 0 6px 0 color,
+                  0 12px 0 color
 
     // Hamburger
     &:before
+      margin:5px auto 0
       width: 20px
       height: 2px
       display: block
-      {centerBoth}
       content: ''
       hamburger(white)
 
@@ -97,6 +103,8 @@
 
   .reveal-nav-input
     position: absolute
+    right:0
+    margin:30px
     display: none
     visibility: hidden
   
@@ -127,19 +135,21 @@
         transform(none)
 
         a
-          margin: 0 0 0 10px
-          padding-left:20px
+          margin: 0
+          padding-left:30px
           border-bottom: 1px solid #222
 
       .list-right
         float:none
         background:black
         top:0
+        text-align:left
+        text-transform: uppercase
         transform(none)
 
         a
-          margin: 0 0 0 10px
-          padding-left:20px
+          margin: 0
+          padding-left:30px
 
           &:not(:last-child)
             border-bottom: 1px solid #222
@@ -147,6 +157,17 @@
           &:hover
             background: #333
 
+        a.download
+          font-family:$font-family-lato-light
+          padding:10px 30px
+          border:none
+          border-radius:0
+          background: url("../images/download.svg") no-repeat scroll 10px -75px transparent
+
+          &:hover
+            opacity:0.6
+            color:white
+            background: url("../images/download.svg") no-repeat scroll 10px -75px #333
       a
         margin:0
         padding: 8px 30px
