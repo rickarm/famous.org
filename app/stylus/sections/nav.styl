@@ -33,19 +33,19 @@
       display: inline-block
       color: $colors-nav-primary
 
-    a.download
+    a.cta
       margin: 0
-      padding:8px 10px 8px 35px
-      text-transform: uppercase;
-      border-radius: 8px
+      padding:8px 0px 8px 0px
+      text-transform: none;
+      border-radius: 5px
       line-height:12px
+      text-align:center
       border: 1px solid $colors-nav-primary
-      background: url("../images/download.svg") no-repeat scroll 15px -78px transparent
 
       &:hover
         opacity:1
         color:$colors-nav-primary
-        background: url("../images/download.svg") no-repeat scroll 15px 6px $colors-nav-secondary
+        background:$colors-nav-secondary
 
     .list-left
       font:$fonts-nav-left
@@ -54,10 +54,15 @@
       centerVertical()
 
     .list-right
+      margin-top:10px
       font:$fonts-nav-right
       float: right
       text-align: right
       centerVertical()
+
+      a
+        margin-top:10px
+        display: block
 
     &.home
       margin-left: 0
