@@ -9,7 +9,6 @@
   position: absolute
   top: 0
   z-index: 10
-  font-weight: $font-weight-bold
 
   .nav-logo
     display: inline-block
@@ -22,45 +21,40 @@
       pointer-events:none
 
   h1
-    font-family:$font-family-lato-light
     font-size:36px
-    font-weight:100
     margin:80px 0 0 0
     padding:0
     text-align:left
-    color:$colors-foreground-primary
 
   .nav-main-list
     a
-      font-family:$font-family-lato-regular
       font-size:12px
-      font-weight:normal
       margin:0 30px
       display: inline-block
-      color: $colors-foreground-primary
+      color: $colors-nav-primary
 
     a.download
-      font-family:$font-family-lato-regular
-      font-weight: normal
       margin: 0
       padding:8px 10px 8px 35px
       text-transform: uppercase;
       border-radius: 8px
       line-height:12px
-      border: 1px solid $colors-foreground-primary
+      border: 1px solid $colors-nav-primary
       background: url("../images/download.svg") no-repeat scroll 15px -78px transparent
 
       &:hover
         opacity:1
-        color:$colors-foreground-primary
-        background: url("../images/download.svg") no-repeat scroll 15px 6px $colors-foreground-secondary
+        color:$colors-nav-primary
+        background: url("../images/download.svg") no-repeat scroll 15px 6px $colors-nav-secondary
 
     .list-left
+      font:$fonts-nav-left
       float: left
       text-transform: uppercase;
       centerVertical()
 
     .list-right
+      font:$fonts-nav-right
       float: right
       text-align: right
       centerVertical()
@@ -76,9 +70,10 @@
     display: none
     right: 0
     margin:10px 30px 0 0
-    border: 2px solid white
+    border: 2px solid $colors-hamburger-foreground
     border-radius: 3px
-    color: $copy-light
+    color: $colors-hamburger-foreground
+    background:$colors-hamburger-background
     font-size: 14px
     text-transform: uppercase
     cursor: pointer
@@ -96,13 +91,13 @@
       height: 2px
       display: block
       content: ''
-      hamburger(white)
+      hamburger($colors-hamburger-foreground)
 
     &:hover
-      background: white
+      background: $colors-hamburger-foreground
 
       &:before
-        hamburger($grey-drk)
+        hamburger($colors-hamburger-background)
 
   .reveal-nav-input
     position: absolute
@@ -124,7 +119,7 @@
       width: 100%
       visibility:hidden
       opacity:0
-      background: black
+      background: $colors-nav-mobile-background
       position: absolute
       top: 100%
       left: 0
@@ -133,7 +128,7 @@
 
       .list-left
         float:none
-        background:black
+        background:$colors-nav-mobile-background
         top:0
         transform(none)
 
@@ -144,7 +139,7 @@
 
       .list-right
         float:none
-        background:black
+        background:$colors-nav-mobile-background
         top:0
         text-align:left
         text-transform: uppercase
@@ -158,10 +153,9 @@
             border-bottom: 1px solid #222
 
           &:hover
-            background: #333
+            background: $colors-nav-mobile-background-hover
 
         a.download
-          font-family:$font-family-lato-light
           padding:10px 30px
           border:none
           border-radius:0
@@ -170,7 +164,7 @@
           &:hover
             opacity:0.6
             color:$colors-foreground-primary
-            background: url("../images/download.svg") no-repeat scroll 10px -75px $colors-foreground-secondary
+            background: url("../images/download.svg") no-repeat scroll 10px -75px $colors-nav-mobile-background-hover
       a
         margin:0
         padding: 8px 30px
@@ -178,7 +172,7 @@
         text-align: left
 
         &:hover
-          background: #333
+          background: $colors-nav-mobile-background-hover
 
     .reveal-nav-btn
     .reveal-nav-input
