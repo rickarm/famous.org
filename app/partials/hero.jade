@@ -3,9 +3,9 @@ header.hero
     h1 Famous Engine
     h2 High-performance javascript platform for animations & interfaces
     
-    .button-section
+    .install
       h3 Install Famous
-      input(type='text' readonly value='npm install -g famous-cli')
+      textarea(readonly onclick='this.setSelectionRange(0, this.value.length)' rows='2') npm install -g famous-cli&#013;&#010;famous init my-first-project
 
-    a.main-nav-link.github(href='#') 6941
-    a.main-nav-link.github-forks(href='#') 847
+      a.github(href='#') 6941
+      a.github-forks(href='#') 847

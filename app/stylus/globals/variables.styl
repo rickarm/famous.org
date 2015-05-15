@@ -40,6 +40,17 @@ $small-width = 600px
 $medium-width = 800px
 $max-width = 1200px
 
+boxShadow(shadow)
+  -webkit-box-shadow: shadow
+  -moz-box-shadow: shadow
+  box-shadow: shadow
+
+selectedBackground(background)
+  &::-moz-selection
+    background: background
+  &::selection
+    background: background
+
 // Transforms & transitions
 
 transition(args)
