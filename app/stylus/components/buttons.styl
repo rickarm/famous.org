@@ -1,8 +1,8 @@
 //UI button styles
 button
 
-  $shadow = $colors-primary-shadow
-  $foreground = $copy-light
+  $shadow = $colors-foreground-primary-shadow
+  $foreground = $colors-foreground-primary
   $background = $colors-primary
   $hoverForeground = $copy-light
   $hoverBackground = #333333
@@ -22,27 +22,31 @@ button
     margin: 15px 0
     padding: 15px 60px
     border-radius: 5px
-    border: 2px solid $background
+    border: 2px solid $colors-foreground-primary
     font-weight: 100
     text-transform: uppercase
-    color: $foreground
-    background:$background
-    box-shadow: 0px 2px 1px $shadow;
+    color:$colors-foreground-secondary
+    background:$colors-foreground-primary
+    box-shadow: 0px 2px 1px $colors-foreground-primary-shadow;
 
     &:hover
-      background: $hoverBackground
-      border: 2px solid $hoverBackground
-      box-shadow: 0px 2px 1px $hoverBackground;
+      color:$colors-foreground-primary
+      background:$colors-foreground-secondary
+      border: 2px solid $colors-foreground-primary
+      box-shadow: 0px 0px 0px $colors-foreground-primary;
 
     &.subscribe
-      margin:5px
-      color:#333
-      background:white
+      margin:2px
+      color:$colors-background-tertiary
+      background:$colors-background-secondary
       border:none
       border-radius: 5px
       padding: 5px 30px
       box-shadow:none
 
+      &:hover
+        opacity:0.6
+      
     &.light
       margin: 10px 0
       padding: 15px 60px

@@ -18,6 +18,9 @@
     width: $logo-size
     height: $logo-size
 
+    object
+      pointer-events:none
+
   h1
     font-family:$font-family-lato-light
     font-size:36px
@@ -25,7 +28,7 @@
     margin:80px 0 0 0
     padding:0
     text-align:left
-    color:$copy-light
+    color:$colors-foreground-primary
 
   .nav-main-list
     a
@@ -34,23 +37,23 @@
       font-weight:normal
       margin:0 30px
       display: inline-block
-      color: $copy-light
+      color: $colors-foreground-primary
 
     a.download
       font-family:$font-family-lato-regular
       font-weight: normal
       margin: 0
-      padding:12px 20px 12px 45px
+      padding:8px 10px 8px 35px
       text-transform: uppercase;
       border-radius: 8px
       line-height:12px
-      border: 1px solid white
-      background: url("../images/download.svg") no-repeat scroll 15px -75px transparent
+      border: 1px solid $colors-foreground-primary
+      background: url("../images/download.svg") no-repeat scroll 15px -78px transparent
 
       &:hover
         opacity:1
-        color:$colors-primary
-        background: url("../images/download.svg") no-repeat scroll 15px 10px white
+        color:$colors-foreground-primary
+        background: url("../images/download.svg") no-repeat scroll 15px 6px $colors-foreground-secondary
 
     .list-left
       float: left
@@ -166,8 +169,8 @@
 
           &:hover
             opacity:0.6
-            color:white
-            background: url("../images/download.svg") no-repeat scroll 10px -75px #333
+            color:$colors-foreground-primary
+            background: url("../images/download.svg") no-repeat scroll 10px -75px $colors-foreground-secondary
       a
         margin:0
         padding: 8px 30px
