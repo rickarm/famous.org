@@ -5,36 +5,34 @@
   height:100%
   padding-top: 100px
   padding-bottom: 20px
+  text-align:center
   backgroundGradient($colors-background-primary, $colors-background-primary-highlight)
 
   h1
-    font-family:$font-family-lato-hairline
+    font:$fonts-hero-heading
     font-size: 130px
-    font-weight:100
     line-height:130px
-    color:$colors-foreground-secondary
+    color:$colors-hero-primary
     text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 
-  h3
-    margin: 30px 120px
-    font-family:$font-family-lato-light
+  h2
+    margin:15px auto 0 auto
+    font:$fonts-hero-subheading
     font-size: 36px
-    font-weight:100
     line-height:36px
-    color:$colors-foreground-secondary
+    color:$colors-hero-primary
+    width:600px
 
-  h4
+  h3
     margin:0px 0px 5px 0px
     padding:0
-    font-family:$font-family-lato-black
+    font:$fonts-hero-cta
     font-size:12px
     line-height:12px
-    font-weigth:normal
     text-transform: uppercase;
-    color:$colors-foreground-primary
+    color:$colors-hero-primary
 
   .container
-    max-width:850px
     position:relative
     top:50%
     -webkit-transform: translateY(-50%)
@@ -57,56 +55,50 @@
         left:0
         padding: 15px 30px
         margin-right:10px
-        font-family: Courier, monospace
-
-      button
-        position:absolute
-        border:1px solid $colors-foreground-primary
-        color:$colors-foreground-primary
-        width:270px
-        height:80px
-        margin:0
-        right:0
+        font:$fonts-hero-code
+        font-size:12px
 
     a.github
       margin:15px
-      font-family:$font-family-lato-regular
+      font:$fonts-hero-social
       font-size:12px
-      font-weight:normal
       margin: 0
       padding-left:20px
       display: inline-block
-      color:$colors-foreground-secondary
+      color:$colors-hero-primary
       background: url(../images/github.svg) 0 1px no-repeat
 
     a.github-forks
       margin:15px
-      font-family:$font-family-lato-regular
+      font:$fonts-hero-social
       font-size:12px
-      font-weight:normal
       margin: 0 0 0 30px
       padding-left:20px
       display: inline-block
-      color:$colors-foreground-secondary
+      color:$colors-hero-primary
       background: url(../images/github-forks.svg) 0 1px no-repeat
 
-  @media screen and (max-width: $medium-width)
-
+  /**
+  *  Resize the headings gradually as we scale the window
+  */
+  @media screen and (max-width: $max-width)
     h1
-      font-size:80px
-      line-height:80px
-    h3
-      font-size: 25px
-      line-height:25px
+      font-size: 10vw
+      line-height:10vw
+    h2
+      font-size: 3vw
+      line-height:3vw
+      width:50vw
 
+  /**
+  *  Minimum heading sizes
+  */
   @media screen and (max-width: $small-width)
 
     h1
       font-size: 60px
       line-height:60px
-    h3
-      font-size: 20px
-    .date
-      font-size: 24px
-    .location
-      font-size: 16px
+    h2
+      font-size: 18px
+      line-height:18px
+      width:305px
