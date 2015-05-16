@@ -1,0 +1,29 @@
+.tiles
+  position:relative
+  padding:70px
+  background:#404041
+  text-align:center
+
+  ul
+    margin:0 auto
+    padding:0
+    list-style-type: none
+    display:inline-block
+    text-align:left
+
+    li
+      padding:10px 50px
+      width:400px
+      display:inline-block
+      &:not(:last-child)
+        border-right:1px solid #525355
+
+  h4
+    color:$colors-tiles-primary
+    font:$fonts-tiles-heading
+    font-size:18px
+
+  p
+    color:$colors-tiles-secondary
+    font:$fonts-tiles-copy
+    font-size:14px
