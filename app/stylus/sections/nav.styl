@@ -43,7 +43,7 @@
 
     a.cta
       margin: 0
-      padding:8px 0px 8px 0px
+      padding:8px 30px
       text-transform: none;
       border-radius: 5px
       line-height:12px
@@ -62,15 +62,14 @@
       centerVertical()
 
     .list-right
-      margin-top:10px
       font:$fonts-nav-right
       float: right
       text-align: right
+      text-transform: uppercase;
       centerVertical()
 
       a
-        margin-top:10px
-        display: block
+        display: inline-block
 
     &.home
       margin-left: 0
@@ -134,7 +133,7 @@
   /**
   * Mobile media styles for medium-width (and under) screens
   */
-  @media screen and (max-width: $small-width)
+  @media screen and (max-width: $medium-width)
 
     .nav-main-list
       width: 100%
@@ -170,6 +169,7 @@
         a
           margin: 0
           padding-left:30px
+          display:block
 
           &:not(:last-child)
             border-bottom: 1px solid #222
