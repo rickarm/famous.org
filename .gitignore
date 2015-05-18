@@ -2,6 +2,9 @@
 .git
 node_modules
 public/index.html
+public/getting-started.html
 public/css/main.css
 public/coc.html
 public/404.html
+
+npm-debug.log
