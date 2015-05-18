@@ -77,40 +77,23 @@
       float: left
 
   .reveal-nav-btn
-    position:absolute
-    width: 36px
-    height: 30px
-    display: none
-    right: 0
-    margin:10px 30px 0 0
-    border: 2px solid $colors-hamburger-foreground
-    border-radius: 3px
-    color: $colors-hamburger-foreground
-    background:$colors-hamburger-background
-    font-size: 14px
-    text-transform: uppercase
+    display:none
+    position: absolute
+    right:0
+    margin-right: 30px
+    padding:8px 10px 8px 10px
+    text-transform: none;
+    border-radius: 5px
+    line-height:12px
+    text-align:center
+    color: $colors-nav-primary
+    border: 1px solid $colors-nav-primary
     cursor: pointer
 
-    // Hamburger mixin
-    hamburger(color)
-      background: color
-      box-shadow: 0 6px 0 color,
-                  0 12px 0 color
-
-    // Hamburger
-    &:before
-      margin:5px auto 0
-      width: 20px
-      height: 2px
-      display: block
-      content: ''
-      hamburger($colors-hamburger-foreground)
-
     &:hover
-      background: $colors-hamburger-foreground
-
-      &:before
-        hamburger($colors-hamburger-background)
+      opacity:1
+      color:$colors-nav-primary
+      background:$colors-nav-secondary
 
   .reveal-nav-input
     position: absolute
@@ -149,9 +132,9 @@
           background:$colors-nav-primary
 
   /**
-  * Mobile media styles for medium-width screens
+  * Mobile media styles for medium-width (and under) screens
   */
-  @media screen and (max-width: $medium-width)
+  @media screen and (max-width: $small-width)
 
     .nav-main-list
       width: 100%
@@ -162,7 +145,7 @@
       top: 100%
       left: 0
       margin-top: 0px
-      transition(all ease-in-out 300ms)
+      //transition(all ease-in-out 300ms)
 
       .list-left
         float:none
@@ -176,6 +159,7 @@
           border-bottom: 1px solid #222
 
       .list-right
+        margin:0
         float:none
         background:$colors-nav-mobile-background
         top:0
@@ -193,16 +177,18 @@
           &:hover
             background: $colors-nav-mobile-background-hover
 
-        a.download
+        a.cta
+          margin:0
           padding:10px 30px
           border:none
+          border-bottom: 1px solid #222
           border-radius:0
-          background: url("../images/download.svg") no-repeat scroll 10px -75px transparent
+          text-align:left
+          text-transform: uppercase
 
           &:hover
             opacity:0.6
             color:$colors-foreground-primary
-            background: url("../images/download.svg") no-repeat scroll 10px -75px $colors-nav-mobile-background-hover
       a
         margin:0
         padding: 8px 30px
