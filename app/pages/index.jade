@@ -1,13 +1,25 @@
 extends ../layouts/layout.jade
 
+block vars
+    - var pageType = "home"
+
 block content
   // Hero section
   include ../partials/hero.jade
 
   // Main Content
   section.content
-    .examples
-        include:markdown ../content/index-examples.md
+    .example
+            include:markdown ../content/index-example1.md
+    .separator
+    .example
+            include:markdown ../content/index-example2.md
+    .separator
+    .example
+            include:markdown ../content/index-example3.md
+    .separator
+    .example
+            include:markdown ../content/index-example4.md
     .cta-group
         button.cta Get Started
         button.cta Download Famous 1.0.1.2

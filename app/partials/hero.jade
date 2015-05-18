@@ -1,12 +1,10 @@
 header.hero
   .container
     h1 Famous Engine
-    h3 High-performance javascript platform for animations & interfaces
+    h2 High-performance javascript platform for animations & interfaces
     
-    .button-section
-      h4 Install
-      input(type='text' readonly value='npm install -g famous-cli')
-      button.cta.light Get Started
+    .install
+      h3 Install Famous
+      textarea(readonly onclick='this.setSelectionRange(0, this.value.length)' rows='2') npm install -g famous-cli&#013;&#010;famous init my-first-project
 
-    a.main-nav-link.github(href='#') 6941
-    a.main-nav-link.github-forks(href='#') 847
+      a.copy(href='#' onclick='this.className += " copied"')

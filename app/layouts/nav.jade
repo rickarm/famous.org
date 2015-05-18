@@ -1,13 +1,17 @@
-nav.nav-main.cf
+nav.nav-main.cf(class=(pageType || ""))
   a.nav-logo(href='/')
-    img(src='/images/famous-logo.svg')
-  label.reveal-nav-btn(for='reveal-nav')
+    object(type="image/svg+xml" data="/images/famous-logo.svg")
+
+  label.reveal-nav-btn(for='reveal-nav') Menu
   input.reveal-nav-input(type='checkbox' id='reveal-nav')
-  
+
   .nav-main-list
     .list-left
       a.main-nav-link(href='/learn') Learn
       a.main-nav-link(href='#') Docs
       a.main-nav-link(href='#') Support
     .list-right
-      a.main-nav-link.download(href='#') Download
+      a.main-nav-link(href='https://github.com/Famous/famous') View on Github
+      a.main-nav-link.cta(href='get-started.html') Get Started
+  block heading
+  block subheading

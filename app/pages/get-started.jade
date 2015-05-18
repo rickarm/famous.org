@@ -1,0 +1,23 @@
+extends ../layouts/layout.jade
+
+block vars
+    - var title = "Getting Started with Famous"
+
+//from nav.jade
+block heading
+    h1 Getting Started with Famous
+
+//from nav.jade
+block subheading
+    h2 Build mobile apps faster with the web technologies you know and love.
+
+block content
+    section.content.getting-started
+        .summary
+            include:markdown ../content/getting-started.md
+
+        .steps
+            img(src='images/fpo-content.png')
+
+    section.tiles
+        include:markdown ../content/tiles.md

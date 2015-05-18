@@ -1,8 +1,9 @@
 html(land="en")
+  block vars
   head
     include ./head.jade
   
-  body
+  body(class=(pageType || ""))
     
     // Main navigation
     include ./nav.jade
