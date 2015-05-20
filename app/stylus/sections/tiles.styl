@@ -9,12 +9,14 @@
     padding:0
     list-style-type: none
     display:inline-block
-    text-align:left
+    text-align:center
 
     li
       padding:10px 50px
-      width:400px
       display:inline-block
+      text-align:left
+      width:30%
+      max-width:450px
       &:not(:last-child)
         border-right:1px solid #525355
 
@@ -22,8 +24,35 @@
     color:$colors-tiles-primary
     font:$fonts-tiles-heading
     font-size:18px
+    line-height:36px
+    white-space:nowrap
 
   p
-    color:$colors-tiles-secondary
+    color:#D8D8D8
     font:$fonts-tiles-copy
     font-size:14px
+    line-height:24px
+
+
+  /**
+  *  Tighten the margins a bit
+  */
+  @media screen and (max-width: 1024px)
+
+    ul
+      li
+        padding:10px
+
+  /**
+  *  Stack the tiles
+  */
+  @media screen and (max-width: $medium-width)
+
+    ul
+      li
+        display:block
+        text-align:center
+        width:auto
+        &:not(:last-child)
+          border:none
+          border-bottom:1px solid #525355
