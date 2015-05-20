@@ -1,20 +1,67 @@
 // Footer section
+$footer-height = 70px
 
 .site-footer
   font:$fonts-footer-nav
-  text-align:center
+  text-align:left
   background:$colors-background-tertiary
-  padding: 50px 0
+  height:$footer-height
+  color:$colors-foreground-secondary
+  padding:0 20px 0 100px
+  display:table
+  width:100%
+
+  .nav-footer
+    position:relative
+    height:$footer-height
+    display:table-cell
+    width:50%
+    vertical-align:middle
+    white-space:nowrap
 
   .subscribe
-    margin-bottom:50px
+    position:relative
+    height:$footer-height
+    display:table-cell
+    vertical-align:middle
+    white-space: nowrap
+    width:50%
+    text-align:right
+    form
+      position:relative
+      white-space: nowrap
 
-  input
-    border:none
-    height:25px
-    width:220px
-    padding:0 16px
-    background:$colors-background-secondary
+    input
+      border:none
+      border-radius:0
+      font-size:12px
+      height:30px
+      width:200px
+      margin:0
+      padding:0 10px
+      background:$colors-background-secondary
+
+    button
+      font:$fonts-footer-nav
+      margin:0
+      padding:0 20px
+      border:none
+      box-shadow:none
+      height:30px
+      border-radius:0
+      text-transform: none
+      font-size:12px
+      outline:none
+      color:$colors-foreground-secondary
+      background:$colors-foreground-primary
+
+      &:hover
+        opacity:0.6
+
+  span
+    margin:0 30px
+    font-size: 14px
+    color:$colors-foreground-secondary
 
   a
     display: inline-block
@@ -24,3 +71,16 @@
 
     &:not(:last-child):after
       display: inline-block
+
+  /**
+    * Media styles removing subscribe form on smaller screens
+    */
+  @media screen and (max-width: 900px)
+    padding:0
+    .nav-footer
+      width:100%
+      text-align:center
+    .subscribe
+      form
+        display:none
+
