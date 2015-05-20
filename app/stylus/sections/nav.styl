@@ -20,6 +20,7 @@
     margin-right:30px
     width: $logo-size
     height: $logo-size
+    z-index:1
 
     object
       pointer-events:none
@@ -93,6 +94,7 @@
     color: $colors-nav-primary
     border: 1px solid $colors-nav-primary
     cursor: pointer
+    z-index:1
 
     &:hover
       opacity:1
@@ -105,7 +107,8 @@
     margin:30px
     display: none
     visibility: hidden
-  
+    z-index:1
+
   .nav-main-list
     //same height as logo for vertical centering
     height: $logo-size
@@ -128,16 +131,32 @@
   */
   @media screen and (max-width: $medium-width)
 
+    h1
+      font-size: 4vw
+      line-height:4vw
+
+    h2
+      font-size:2vw
+      line-height:2vw
+      margin-top:5px
+
     .nav-main-list
       width: 100%
       visibility:hidden
       opacity:0
       background: $colors-nav-mobile-background
       position: absolute
-      top: 100%
+      top: 0
       left: 0
       margin-top: 0px
+      text-align:center
+      padding-top:100px
+      z-index: 0
       //transition(all ease-in-out 300ms)
+
+      a
+        font:$fonts-light
+        font-size:24px
 
       .list-left
         float:none
@@ -147,49 +166,39 @@
 
         a
           margin: 0
-          padding-left:30px
-          border-bottom: 1px solid #222
+          padding:15px 0
 
       .list-right
         margin:0
         float:none
         background:$colors-nav-mobile-background
         top:0
-        text-align:left
         text-transform: uppercase
+        text-align:center
+        padding-bottom:10px
         transform(none)
 
         a
           margin: 0
-          padding-left:30px
+          padding:15px 0
           display:block
 
-          &:not(:last-child)
-            border-bottom: 1px solid #222
-
-          &:hover
-            background: $colors-nav-mobile-background-hover
-
         a.cta
-          margin:0
-          padding:10px 30px
-          border:none
-          border-bottom: 1px solid #222
-          border-radius:0
-          text-align:left
-          text-transform: uppercase
+          font:$fonts-very-bold
+          font-size:24px
+          margin:40px auto
+          width:200px
+          padding-left:20px
+          background: url("../images/download.svg") no-repeat scroll 15px -65px transparent
 
           &:hover
-            opacity:0.6
-            color:$colors-foreground-primary
+            color:$colors-nav-primary
+            background: url("../images/download.svg") no-repeat scroll 15px 18px $colors-nav-secondary
+
       a
         margin:0
         padding: 8px 30px
         display: block
-        text-align: left
-
-        &:hover
-          background: $colors-nav-mobile-background-hover
 
     .reveal-nav-btn
     .reveal-nav-input
@@ -198,3 +207,17 @@
     .reveal-nav-input:checked + .nav-main-list
       visibility:visible
       opacity:1
+
+
+  /**
+  *  Minimum heading sizes
+  */
+  @media screen and (max-width: $small-width)
+
+    h1
+      font-size: 22px
+      line-height:40px
+
+    h2
+      font-size:12px
+      line-height:12px
