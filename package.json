@@ -11,8 +11,7 @@
     "build": "npm run build-jade && npm run build-stylus",
     "build-jade": "jade ./app/pages/*.jade -o ./public/",
     "build-stylus": "stylus ./app/stylus/main.styl -o ./public/css/main.css",
-    "prepublish": "npm run build",
-    "deploy": "npm run build && surge ./public late-night-hacking.surge.sh"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
