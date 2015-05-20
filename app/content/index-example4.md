@@ -1,5 +1,8 @@
-##Uniﬁed DOM & GL API
-Work with DOM and WebGL via the same API and coordinate space.
+##Mixed Mode
+DOM & WebGL, together at last.
 
-{Create a GL cube as easily as you create a div}
-<iframe src='http://learn-staging.famo.us/container/index.html?block=effects-scene&detail=false' scrolling='no' class='code-block' allowtransparency='true'></iframe>
+Use DOM for text and documents along with
+the unlimited expressiveness of WebGL in a
+single coordinate space and with a single API.
+
+<iframe src='http://staging.famous.org/examples/index.html?block=webgl-wall&detail=false' scrolling='no' class='code-block' allowtransparency='true'></iframe>
