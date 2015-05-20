@@ -6,9 +6,13 @@
 
   width: 100%
   padding: 25px
-  position: absolute
+  position: fixed
   top: 0
   z-index: 10
+
+  &.background
+    background:$colors-background-primary
+    backgroundGradient($colors-background-primary, $colors-background-primary-highlight)
 
   .nav-logo
     display: inline-block

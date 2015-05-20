@@ -20,3 +20,34 @@ block content
     .separator
     .example
             include:markdown ../content/index-example4.md
+
+block scripts
+    script.
+
+        //watches for vertical scroll change events and either
+        //enables or disables the background on the sticky nav
+
+        function scrollWatcher(e) {
+
+            var doc = document.documentElement;
+            var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+            var nav = document.getElementsByClassName("nav-main")[0];
+            var hasBackground = nav.className.indexOf("background") > 0;
+
+            //if we're over the hero area, keep things transparent
+            if(top < 670) {
+                if(hasBackground) {
+                    nav.className = nav.className.replace("background", "");
+                }
+                return;
+            }
+
+            //if we're not over the hero area, add the background
+            //if it doesn't already exist
+            if(!hasBackground) {
+                nav.className += " background"
+            }
+        };
+
+        window.addEventListener("load", scrollWatcher);
+        document.addEventListener("scroll", scrollWatcher);
