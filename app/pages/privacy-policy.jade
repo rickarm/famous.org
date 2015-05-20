@@ -1,0 +1,11 @@
+extends ../layouts/layout.jade
+block vars
+    - var title = "Privacy Policy"
+//from nav.jade
+block heading
+    h1 Privacy Policy
+
+block content
+    section.content.privacy-policy
+        .summary
+            include:markdown ../content/privacy-policy.md
