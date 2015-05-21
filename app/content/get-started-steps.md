@@ -12,7 +12,7 @@
 
 3. ##Start up the server
     <div class="description">
-        <p>Once you’ve created a new project to your local workstationd run the dev command to boot up a development server and install and dependencies that have not yet been set up.</p>
+        <p>Once you’ve created a new project to your local workstationd run the dev command to boot up a development server and install dependencies that have not yet been set up.</p>
         <code class="example"><span>$</span> famous dev</code>
     </div>
 
