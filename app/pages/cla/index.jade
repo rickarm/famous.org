@@ -1,0 +1,12 @@
+extends ../../layouts/layout.jade
+
+block vars
+    - var title = "CLA"
+//from nav.jade
+block heading
+    h1 CLA
+
+block content
+    section.content.cla
+        .summary
+            include:markdown ../../content/cla.md

@@ -1,0 +1,36 @@
+section.content.cla
+  padding:50px 50px 80px 50px
+  text-align:left
+  background:white
+  max-width:1200px
+  margin:0 auto
+  font:$fonts-regular
+  font-size:15px
+
+  h2
+    font:$fonts-light
+    font-size:42px
+    margin-top:60px
+
+  .steps
+    margin: 100px 0 auto 0
+
+  /**
+  *  Resize the headings gradually as we scale the window
+  */
+  @media screen and (max-width: $max-width)
+    padding:10vw
+    padding-top: 0;
+    h2
+      font-size: 3vw
+      line-height:3vw
+
+  /**
+  *  Minimum heading sizes
+  */
+  @media screen and (max-width: $small-width)
+    padding:40px
+    padding-top: 0;
+    h2
+      font-size: 18px
+      line-height:18px
