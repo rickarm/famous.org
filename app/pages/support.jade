@@ -1,0 +1,12 @@
+extends ../layouts/layout.jade
+
+block vars
+    - var title = "Support"
+//from nav.jade
+block heading
+    h1 Support
+
+block content
+    section.content.support
+        .summary
+            include:markdown ../content/support.md
