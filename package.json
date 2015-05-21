@@ -9,7 +9,7 @@
     "test": "npm run build",
     "watch": "nodemon --ignore node_modules/ -e js,json,jade,styl,md --exec 'npm run build'",
     "build": "npm run build-jade && npm run build-stylus",
-    "build-jade": "jade ./app/pages/*.jade -o ./public/ && jade ./app/pages/cla/*.jade -o ./public/cla/",
+    "build-jade": "jade ./app/pages/*.jade -o ./public/ && jade ./app/pages/cla/*.jade -o ./public/cla/ && jade ./app/pages/support/*.jade -o ./public/support/",
     "build-stylus": "stylus ./app/stylus/main.styl -o ./public/css/main.css",
     "prepublish": "npm run build"
   },
