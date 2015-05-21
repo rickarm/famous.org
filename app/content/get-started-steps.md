@@ -18,7 +18,7 @@
 
 4. ##Open the project
     <div class="description">
-        <p>Then open up the project’s <code>src/</code> folder, where you’ll ﬁnd the beginnings of some simple application code. As you make changes there, your application will reload live in your browser at <a href='http://localhost:1337/'>localhost:1337</a></p>
+        <p>Then open up the project’s <code>src/</code> folder, where you’ll ﬁnd the beginnings of some simple application code. As you make changes there, your application will reload live in your browser at <a href='http://localhost:1337/'>localhost:1618</a></p>
     </div>
 
 5. ##Deploy to the cloud
