@@ -1,12 +1,7 @@
 .DS_Store
 .git
 node_modules
-public/index.html
-public/get-started.html
-public/css/main.css
-public/coc.html
-public/404.html
+public/*.html
 
 npm-debug.log
-public/terms.html
-public/privacy-policy.html
+public/css/*.css
