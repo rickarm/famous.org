@@ -7,12 +7,12 @@
 2. ##Create a Project
     <div class="description">
         <p>Once you have installed the cli you can easily get started by creating a new project:</p>
-        <code class="example"><span>$</span> famous create</code>
+        <code class="example"><span>$</span> famous create [name-of-project]</code>
     </div>
 
 3. ##Start up the server
     <div class="description">
-        <p>Once you’ve created a new project to your local workstationd run the dev command to boot up a development server and install dependencies that have not yet been set up.</p>
+        <p>Once you’ve created a new project to your local workstation run the dev command to boot up a development server and install dependencies that have not yet been set up.</p>
         <code class="example"><span>$</span> famous dev</code>
     </div>
 
@@ -26,3 +26,4 @@
         <p>When you are ready to share with the world run the deploy command to upload your code to the famous CDN. You will receive both a direct link to your project and an embed code to include it in other projects.</p>
         <code class="example"><span>$</span> famous deploy</code>
     </div>
+    
