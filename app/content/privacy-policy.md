@@ -4,7 +4,7 @@
 
 <p>By using our web site (the “Site”), participating in our services (collectively with the Site, the “Services”), or by providing Famo.us with your information, you consent to the collection, transfer, storage, and processing of information as set forth in this Privacy Policy. Famo.us will take all steps reasonably necessary to ensure that your data is treated securely in accordance with this Privacy Policy. We may change this Privacy Policy by posting a new version on the Site. By using the Site after the date of such change, you represent and warrant that you have read, understand, and agree to be bound by all terms of the Privacy Policy then in effect.</p>
 
-<p>Unless otherwise defined in the Privacy Policy, terms defined and used in the Famo.us Terms of Service, accessible at <a href="/terms/">http://famo.us/terms/</a> (the “Terms”), shall have same meaning in this Privacy Policy. Famous Industries, Inc. is the corporate name for Famo.us. In this Privacy Policy, when the words “Famo.us”, “famo.us”, “our”, “us” or “we” are used, they shall refer to Famous Industries, Inc., and when the words “you”, “your”, or “User” are used, they refer to you.</p>
+<p>Unless otherwise defined in the Privacy Policy, terms defined and used in the Famo.us Terms of Service, accessible at <a href="/terms.html">http://famous.org/terms.html</a> (the “Terms”), shall have same meaning in this Privacy Policy. Famous Industries, Inc. is the corporate name for Famo.us. In this Privacy Policy, when the words “Famo.us”, “famo.us”, “our”, “us” or “we” are used, they shall refer to Famous Industries, Inc., and when the words “you”, “your”, or “User” are used, they refer to you.</p>
 
 <hr>
 
@@ -81,7 +81,7 @@ How we use User Generated Data. We track User Generated Data for two purposes:</
 
 <p><strong>How we use IP Addresses.</strong> In order to administer and optimize the Site for you and to diagnose problems with our Site, we use your IP address to help identify you and to gather broad demographic information about you.</p>
 
-<p><strong>Other Uses of Collected Information.</strong> In addition to collecting information to deliver our Services, improve our Services, develop content, help Users manage their accounts, and communicate with Users, we may also use collected information to enforce our Terms, as set forth at <a href="/terms/">http://famo.us/terms/</a>.</p>
+<p><strong>Other Uses of Collected Information.</strong> In addition to collecting information to deliver our Services, improve our Services, develop content, help Users manage their accounts, and communicate with Users, we may also use collected information to enforce our Terms, as set forth at <a href="/terms.html">http://famous.org/terms.html</a>.</p>
 
 <hr>
 
