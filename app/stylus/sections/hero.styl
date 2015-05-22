@@ -52,7 +52,7 @@
       textarea
         outline: 0;
         background: #f5f5f5
-        border: 2px solid #f5f5f5
+        border:1px solid #f5f5f5
         border-radius: 5px
         resize: none
         overflow:hidden
@@ -61,14 +61,15 @@
         padding: 23px
         margin-right:10px
         margin-bottom:10px
-        border:1px solid $colors-hero-secondary
         font:$fonts-hero-code
         font-size:12px
-        boxShadow(inset 0px 0px 2px 0px $colors-hero-secondary)
         selectedBackground($colors-hero-secondary)
+        transition(all ease-out 300ms)
 
         &:focus
           outline: 0;
+          boxShadow(inset 0px 0px 2px 0px $colors-hero-secondary)
+          border:1px solid $colors-hero-secondary
 
     a.copy
       font:$fonts-hero-social
