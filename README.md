@@ -19,3 +19,9 @@ Then simply surf to [http://localhost:3000](http://localhost:3000)
 ##Contributing
 
 If you would like to contribute to the website please feel free to send a PR!
+
+###LICENSE
+
+MIT
+
+See the license included in the project for more details.

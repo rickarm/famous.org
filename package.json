@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/jQuerySF/2015.jquerysf.com.git"
   },
-  "author": "",
+  "author": "Myles Borins <myles@famo.us>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jQuerySF/2015.jquerysf.com/issues"
