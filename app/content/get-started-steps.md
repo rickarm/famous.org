@@ -19,6 +19,7 @@
 4. ##Open the project
     <div class="description">
         <p>Then, open up the project’s <code>src/</code> folder where you’ll ﬁnd the beginnings of some simple application code. As you make changes there, your application will reload live in your browser at <a href='http://localhost:1618/'>http://localhost:1618</a></p>
+        <div class="example"></div>
     </div>
 
 5. ##Deploy to the cloud
@@ -26,4 +27,4 @@
         <p>When you are ready to share with the world, run the deploy command to upload your code to the Famous CDN. You will receive both a direct link to your project and an embed code to include it in other projects.</p>
         <code class="example"><span>$</span> famous deploy</code>
     </div>
-    
+

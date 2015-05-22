@@ -75,3 +75,10 @@ block scripts
              }
            });
         }
+
+        /** Script for tracking install on landing page
+        **/
+        var installCommand = document.getElementsByClassName('install')
+        addListener(installCommand, 'click', function() {
+          ga('send', 'event', 'textarea', 'click', 'installs');
+        });
