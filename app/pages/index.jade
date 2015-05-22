@@ -34,6 +34,7 @@ block scripts
         //enables or disables the background on the sticky nav
 
         var nav = document.querySelector(".nav-main");
+        var hero = document.querySelector(".hero");
         var hasBackground = nav.classList.contains("background");
 
         function scrollWatcher(e) {
@@ -42,7 +43,7 @@ block scripts
             var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 
             //if we're over the hero area, keep things transparent
-            if(top < 670) {
+            if(top < hero.offsetHeight - nav.offsetHeight) {
                 if(hasBackground) {
                     nav.classList.remove("background");
                     hasBackground = false;
