@@ -142,6 +142,7 @@
 
     .nav-main-list
       width: 100%
+      height: 100vh
       visibility:hidden
       opacity:0
       background: $colors-nav-mobile-background
@@ -152,7 +153,6 @@
       text-align:center
       padding-top:100px
       z-index: 0
-      //transition(all ease-in-out 300ms)
 
       a
         font:$fonts-light
@@ -206,6 +206,7 @@
       display: inline-block
 
     .reveal-nav-input:checked + .nav-main-list
+      transition(opacity ease-out 300ms)
       visibility:visible
       opacity:1
 
