@@ -8,6 +8,10 @@ Once your account is created and email address is verified you can come join us 
 
 If you are using the desktop slack application you will need to enter *famous-community* as the team domain.
 
+##Are you looking for famo.us
+
+If you are looking for the old version of our website, including famous university, and the 0.3.5 documentation, you can find it at [http://deprecated.famous.org](http://deprecated.famous.org)
+
 ## Contributing
 
 Active involvement from the community is essential to making the Famous Engine the most capable and performant JavaScript rendering engine. You can help by reporting bugs, fixing bugs, adding features, and providing feedback.
