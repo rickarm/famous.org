@@ -9,27 +9,27 @@ block content
   include ../partials/hero.jade
 
   // Main Content
-  section.content
+  section.content.padded-bottom
     .example
             include:markdown ../content/index-example0.md
     .separator
     .example.new
             include:markdown ../content/what-is-new.md
-    .separator
-    .example
-            include:markdown ../content/index-example1.md
-    .separator
+    //- .separator
+    //- .example.padded-bottom
+    //-         include:markdown ../content/index-cli-example.md
+    //- .separator
+    //- .example
+    //-         include:markdown ../content/index-example1.md
+    //- .separator
     //- .example
     //-         include:markdown ../content/index-example2.md
     //- .separator
-    .example.padded-bottom
-            include:markdown ../content/index-cli-example.md
-    .separator
-    .example
-            include:markdown ../content/index-example3.md
-    .separator
-    .example
-            include:markdown ../content/index-example4.md
+    //- .example
+    //-         include:markdown ../content/index-example3.md
+    //- .separator
+    //- .example
+    //-         include:markdown ../content/index-example4.md
 
 block scripts
     script.

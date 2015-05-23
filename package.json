@@ -30,5 +30,8 @@
     "serve": "^1.4.0",
     "stylus": "^0.50.0",
     "surge": "^0.8.1"
+  },
+  "dependencies": {
+    "highlight.js": "^8.6.0"
   }
 }
