@@ -18,7 +18,7 @@ The new Famous Engine produces almost no garbage at all. Transforms are now upda
 ###3D Physics Engine:
 
 
-Famous introduces a brand new 3D physics engine that brings real life movement to your applications. Living its own module entirely, you can incorporate as little or as much of it as you want.
+Famous introduces a brand new 3D physics engine that brings real life movement to your applications. Living in its own module entirely, you can incorporate as little or as much of it as you want.
 
 
 <iframe src='http://staging.famous.org/examples/index.html?block=physics&detail=false&header=false' scrolling='no' class='code-block' allowtransparency='true'></iframe>
