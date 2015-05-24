@@ -1,16 +1,14 @@
 ##Slack
 
-The quickest way to get first class support is to join us in the famous-community [slack][slack].
+The quickest way to get first-class support is to join us in the [famous-community Slack channel][slack].
 
-The first thing you need to do is visit [http://slack.famous.org/signup][signup] and enter your email address to create an account.
+First, visit [http://slack.famous.org/signup][signup] and enter your email address to create an account. Once your account is created and your email address is verified, you can join us at [http://slack.famous.org][slack].
 
-Once your account is created and email address is verified you can come join us at [http://slack.famous.org][slack].
+If you are using the desktop Slack application, you will need to enter *famous-community* as the team domain.
 
-If you are using the desktop slack application you will need to enter *famous-community* as the team domain.
+##Are you looking for famo.us?
 
-##Are you looking for famo.us
-
-If you are looking for the old version of our website, including famous university, and the 0.3.5 documentation, you can find it at [http://deprecated.famous.org](http://deprecated.famous.org)
+If you are looking for the old version of our website, including Famo.us University, and the 0.3.5 documentation, you can find it at [http://deprecated.famous.org](http://deprecated.famous.org)
 
 ## Contributing
 
