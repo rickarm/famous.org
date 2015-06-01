@@ -10,7 +10,7 @@ Famous now unites DOM and WebGL under a single coordinate system. Borrowing conc
 ###Rebuilt Architecture: 
 
 
-The new Famous Engine produces almost no garbage at all. Transforms are now updated throug an event-based system, which avoids unnecessary matrix multiplications. The result is a renderer that delivers consistent, smooth, 60fps animations with even better performance than before.
+The new Famous Engine produces almost no garbage at all. Transforms are now updated through an event-based system, which avoids unnecessary matrix multiplications. The result is a renderer that delivers consistent, smooth, 60fps animations with even better performance than before.
 
 <iframe src='https://staging.famous.org/examples/index.html?block=layout&detail=false&header=false' scrolling='no' class='code-block' allowtransparency='true'></iframe>
 
